@@ -1,0 +1,153 @@
+header img{
+    width:100px;
+    height: 100px;
+    display: inline;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 55pt;
+    color: dimgray;
+}
+
+.font{
+    font-size: 16pt;
+    font-family:'lucinda sans';
+    font-style: italic;
+    color: grey;
+}
+
+.caixa{
+    height:250px;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color:cornsilk;
+    display:inline-block;
+    margin-left: 10%;
+}
+ 
+#cabecalho{
+    padding:5px;
+    margin:  0;
+}
+
+#menu{
+    padding: 1.5%;
+    width: 25%;
+    border: black 1px solid;
+    margin:2%;
+    border-radius: 10px;
+}
+
+#main{
+    background-color: lavender;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#rodape{
+    background-color: lightblue;
+    padding:50px;
+    margin:1%
+}
+
+#ex2{
+    background-color:lightpink;
+}
+
+aside a{
+    display:block;
+    text-decoration:none;
+    padding: 2%;
+}
+
+/*todo elemento que tiver 'src' vai ter uma borda roxa*/
+[src]{
+    border:1px purple solid;
+}
+
+/*toda imagem em jpg vai ficar com a borda arredondada*/
+[src$='jpg']{
+    border-radius:10px;
+}
+
+/*quando tem '*=/alguma coisa/' quer dizer que em algum lugar do link (href) se tiver o que esta entre os asterísticos, vai 
+receber as características descritas ai (*= É PARA TRECHOS DE LINK)*/
+[href*='/ong/']{
+    color: crimson;
+    margin:3px;
+}
+
+/*todo elemento que for esse link vai receber essas caracteristicas-(~= É PARA LINKS)*/
+[href~='link']{
+    color:darkcyan;
+    font-size:24pt;
+    
+}
+
+/*tudo que começar com o que esta dentro das aspas vai receber essas caracteristicas (^= É PARA INICIO DE LINK)*/
+[href^='https://www.google']{
+    color:blueviolet;
+    font-size: 12pt;
+}
+
+[src^='Gatinho']{
+    width:250px;
+    height:250px;
+}
+
+div.btn{
+    border-radius: 5px;
+    padding: 10px;
+    margin:5px;
+    background-color: bisque;
+    width:100px;
+    text-align:center;
+}
+
+a, a :link{
+    color: cornflowerblue;
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    text-decoration: underline;
+    color: darkorange;
+    background-color:aliceblue;
+}
+
+a:active{
+    background-color: black;
+    border:ghostwhite 3px solid;
+}
+
+div.box{
+    width: 100px;
+    height:100px;
+    background-color:aliceblue;
+    border:1px solid cyan;
+    box-sizing: border-box;
+    display: inline-block;
+    color: bisque;
+    line-height: 100px;
+    margin:5px;
+    cursor:pointer;
+}
+
+section.tamanho{
+    width:250px;
+    text-align:center;
+}
+
+
+div:hover{
+    background-color: crimson;
+
+}
+
+div.focus{
+    background-color:black ;
+    color:white;
+}
